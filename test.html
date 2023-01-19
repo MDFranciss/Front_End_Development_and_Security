@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			document.write("Hello, World!");
+		</script>
+		<button onclick="My_first_function()">
+			Click Me!
+		</button>
+		<p id="Irish"></p>
+		<script>
+			function My_first_function() {
+			var String="Kiss me, I'm Irish!";
+			var result=String.fontcolor("green");
+			document.getElementById("Irish").innerHTML =
+			result;
+		}
+		</script>
+		<p id="Concatenate"></p>
+		<script>
+			Sentence = "I am learning ";
+			Sentence += "a lot from this course!";
+			document.getElementById("Concatenate").innerHTML = Sentence;
+		</script>
+		<button onclick="My_second_function()">
+			Submit Result!
+		</button>
+		<p id="Jamaican"></p>
+		<script>
+			function My_second_function() {
+			var String="I'm the fastest runner in the world!";
+			var result=String.fontcolor("red");
+			document.getElementById("Jamaican").innerHTML =
+			result;
+		}
+		</script>
+		<p id="Math"></p>
+		<script src="test_1.js">
+		</script>
+		
+		<p id="Negation"></p>
+		<script>
+			var x = 10;
+			document.getElementById("Negation").innerHTML = -x;
+		</script>
+		<script>
+			var x = 5;
+			x++;
+			document.write(x);
+		</script>
+		<script>
+			var x = 5.25;
+			x--;
+			document.write(x);
+		</script>
+		<script>
+			window.alert(Math.random());
+		</script>
+		<script>
+			window.alert(Math.random() * 100);
+		</script>
+		<p id="Delete"></p>
+		<script>
+			var Animal = {
+				Species: "Dog",
+				Color: "Black",
+				Breed: "Labrador",
+				Age: 5,
+				Sound: "Bark",
+			};
+			delete Animal.Sound;
+			document.getElementById("Delete").innerHTML = Animal.Sound;
+		</script>
+		<script>
+			document.write(typeof 247365);
+		</script>
+	</body>
+</html>

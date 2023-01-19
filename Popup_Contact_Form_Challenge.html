@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup_contact_form_challenge.css">
+    <script src="popup_contact_form_challenge.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pop-Up Form</h2>
+    <p>Click the button below to display the Login Form</p>
+    <button class="open-button" onclick="openForm()">CLick To Login</button>
+   <div class="form-popup" id="myForm">
+    <form action="" class="form-container">
+        <h2>LOGIN</h2>
+
+        <label for="email"><i>EMAIL:</i></label>
+        <input type="text" placeholder="Enter Email Here" name="email" required>
+
+        <label for="psw"><i>PASSWORD:</i></label>
+        <input type="text" placeholder="Enter Password Here" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#area1 {
+    height: 450px;
+    background-color: red;
+}
+
+#area2 {
+    height: 450px;
+    background-color: yellow;
+}

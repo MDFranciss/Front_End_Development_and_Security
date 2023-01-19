@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h2>toUpperCase() method</h2>
+		<p id="Upper"></p>
+		<script>
+			let text = "I am large across the board!";
+			let result = text.toUpperCase();
+			
+			document.getElementById("Upper").innerHTML = result;
+		</script>
+		<h2>search() method</h2>
+		<p id="find_me"></p>
+		<script>
+			var string = "You will be rewarded if you can locate me.";
+			var position = string.search("you");
+			
+			document.getElementById("find_me").innerHTML = position;
+		</script>
+		<h2>Number Methods(toPrecision)</h2>
+		<p id="Precision"></p>
+		<script>
+			var X = 12938.3012987376112;
+			document.getElementById("Precision").innerHTML = 
+			X.toPrecision(10);
+		</script>
+		<h2>toFixed() Method</h2>
+		<p id="fixed"></p>
+		<script>
+			var num = 70.93846;
+			var n = num.toFixed();
+			document.getElementById("fixed").innerHTML = n;
+		</script>
+		<h2>valueOf() Method</h2>
+		<p id="value"></p>
+		<script>
+			var X = 456;
+			document.getElementById("value").innerHTML = 
+			X.valueOf() + "<br>" +
+			(456).valueOf() + "<br>" +
+			(400 + 50 + 6).valueOf();
+		</script>
+	</body>
+</html>

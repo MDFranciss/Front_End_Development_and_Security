@@ -1,0 +1,68 @@
+body  {
+    box-sizing: border-box;
+}
+
+
+button.sticky {
+    background-color: crimson;
+    color: whitesmoke;
+    padding: 20px 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    position: fixed;
+    position: -webkit-sticky;
+    bottom: 23px;
+    right: 28px;
+    width: 200px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 2px solid #f7f7f7;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 200px;
+    padding: 25px;
+    background-color: deepskyblue;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #bbb;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #0aaa04;
+    color:#f7f7f7;
+    padding: 8px 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 8px;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .sticky:hover {
+    opacity: 1;
+}
+
+

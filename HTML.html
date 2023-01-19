@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<script src="test_2.js">
+		</script>
+		<script>
+			document.write(5 > 10 || 10 > 20);
+		</script>
+		<p id="Not"></p>
+		<script>
+			document.getElementById("Not").innerHTML = !!(20 > 10);
+		</script>
+		<script>
+			document.write(Bigger = (5 < 1) ? "The number on the left is bigger.":
+			"The number on the right is bigger.");
+		</script>
+		
+		<h2>Ternary Operators</h2>
+		<p>Riders must be at least 52 centimeters tall to ride.</p>
+		<input id="Height" value="52" />
+		<button onclick="Ride_Function()">Click Here</button>
+		<p id="Ride"></p>
+		<script>
+			function Ride_Function() {
+				var Height, Can_ride;
+				Height = document.getElementById("Height").value;
+				Can_ride = (Height < 52) ? "You are too short":"You are tall enough";
+				document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+			}
+		</script>
+		<h2>Constructors & Keywords</h2>
+		<p id="Keywords_and_Constructors"></p>
+		<script>
+			function Vehicle(Make, Model, Year, Color) {
+				this.Vehicle_Make = Make;
+				this.Vehicle_Model = Model;
+				this.Vehicle_Year = Year;
+				this.Vehicle_Color = Color;
+			}
+			var Jack = new Vehicle("Dodge", "Viper", 2021, "Red");
+			var Emily = new Vehicle("Jeep", "Trail Hawk", 2020, "Black and White");
+			var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+			document.getElementById("Keywords_and_Constructors").innerHTML = 
+			"Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
+			" manufactured in " + Erik.Vehicle_Year;
+		</script>
+		<p id="Counting"></p>
+		<script>
+			document.getElementById("Counting").innerHTML = Count();
+			function Count() {
+				var Starting_point = 9;
+				function Plus_one() {Starting_point += 1};
+				Plus_one();
+				return Starting_point;
+			}
+		</script>
+		<h2>Scope Global Variable</h2>
+		<script>
+			var X = 10;
+				function Add_numbers_1() {
+				document.write(20 + X + "<br>");
+			}
+				function Add_numbers_2() {
+				document.write(X + 100);
+			}
+				Add_numbers_1();
+				Add_numbers_2();
+		</script>
+		<h2>Scope Local Variable</h2>
+		<script>
+			function Add_numbers_1() {
+				var Y = 10;
+				document.write(20 + Y + "<br>");
+			}
+				function Add_numbers_2() {
+				document.write(Y + 100);
+			}
+				Add_numbers_1();
+				Add_numbers_2();
+		</script>
+		<h2>Conditional Statements</h2>
+		<script>
+			if (1 < 2) {
+			document.write("The number on the left is less than the number on the right")
+		}
+		</script>
+		<h2>IF Statements</h2>
+		<p id="Greeting">How are you this evening?</p>
+		<script>
+			if (new Date().getHours() < 18) {
+			document.getElementById("Greeting").innerHTML = "How are you today?";
+		}
+		</script>
+		<h2>ELSE Statements</h2>
+		<p>Write your age:</p>
+		<input id="Age" value="" />
+		<p id="How_old_are_you?"></p>
+		<button onclick="Age_Function()">Click Here</button>
+		<script>
+			function Age_Function() {
+				Age = document.getElementById("Age").value;
+				if (Age >= 18) {
+					Vote = "You are old enough to vote!";
+				}
+				else {
+					Vote = "You are not old enough to vote!";
+				}
+				document.getElementById("How_old_are_you?").innerHTML = Vote;
+			}
+		</script>
+		<h2>ELSE IF Statements</h2>
+		<p id="Time_of_day"></p>
+		<script>
+			 function Time_function() {
+				var Time = new Date().getHours();
+				var Reply;
+				if (Time < 12 == Time > 0) {
+					Reply = "It is morning time!";
+				}
+				else if (Time > 12 == Time < 18) {
+					Reply = "It is afternoon time.";
+				}
+				else {
+					Reply = "It is evening time.";
+				}
+				document.getElementById("Time_of_day").innerHTML = Reply;
+			}
+			Time_function();			
+		</script>	
+		<h2>Concat() Method</h2>
+			<p id="Concatenate"></p>
+			<script>
+				var Part_1 = "I have ";
+				var Part_2 = "made this ";
+				var Part_3 = "into a complete ";
+				var Part_4 = "sentence.";
+				var whole_sentence = Part_1.concat(Part_2, Part_3, Part_4);
+				document.getElementById("Concatenate").innerHTML = whole_sentence;
+			</script>
+			
+		<h2>Slice() Method</h2>
+			<p id="Slice"></p>
+			<script>
+			var Sentence = "All work and no play makes Johnny a dull boy.";
+			var Section = Sentence.slice(27,33);
+			document.getElementById("Slice").innerHTML = Section;
+			</script>
+		<h2>Window Document Object/URL Property</h2>
+		<p id="window"></p>
+		<script>
+			var url = window.document.URL;
+			document.getElementById("window").innerHTML = url;
+		</script>
+		<p style="font-size:6vw;">This is a 6% viewport width</p>
+	</body>
+</html>
+			

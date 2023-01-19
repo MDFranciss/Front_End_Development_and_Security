@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Slideshow</title>
+    <link rel="stylesheet" href="slideshow_challenge.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="slideshow">
+        <div>
+            <img src="image/dragonball_1.png" alt="Freeza" style="width: 100%">
+        </div>
+        <div>
+            <img src="image/dragonball_2.png" alt="Gohan" style="width: 100%">
+        </div>
+        <div>
+            Wow this slideshow stuff really works!!
+        </div>
+        <div>
+            <img src="image/dragonball_3.png" alt="Vegeta" style="width: 100%">
+        </div>
+        <div>
+            <img src="image/dragonball_4.png" alt="Trunks" style="width: 100%">
+        </div>
+        <div>
+            <img src="image/dragonball_5.png" alt="Trunks Slash" style="width: 100%">
+        </div>
+        <div>
+            <img src="image/dragonball_6.png" alt="Picollo" style="width: 100%">
+        </div>
+        <div>
+            <img src="image/dragonball_7.png" alt="Teenage Gohan" style="width: 100%">
+        </div>
+        <div>
+            <img src="image/dragonball_8.png" alt="Super Saiyan Gohan" style="width: 100%">
+        </div>
+        <div>
+            Are you ready for this??
+        </div>
+        <div>
+            <img src="image/dragonball_9.png" alt="Mega Vegeto" style="width: 100%">
+        </div>
+    </div>
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 3000);
+    </script>
+</body>
+</html>

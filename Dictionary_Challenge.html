@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h2>Dictionary</h2>
+		<p id="Display"></p>
+		<script>
+			var Plane = {
+				Model: 757,
+				Color: "Black",
+				Engine: "Turbine",
+				Built: 1987,
+				Sound: "Sooaaar!",
+			};
+			document.getElementById("Display").innerHTML = Plane.Color;
+		</script>
+		<h2>Delete KVP</h2>
+		<p id="Delete"></p>
+		<script>
+			var Plane = {
+				Model: 757,
+				Color: "Black",
+				Engine: "Turbine",
+				Built: 1987,
+				Sound: "Sooaaar!",
+			};
+			delete Plane.Model;
+			document.getElementById("Delete").innerHTML = Plane.Model;
+		</script>
+		<h2>Type Of Operator</h2>
+		<script>
+			document.write(typeof "This is a Elephant");
+		</script>
+		<h2>Identical Keys Dictionary</h2>
+		<p id="Display"></p>
+		<script>
+			var Plane = {
+				Model: 757,
+				Model: 767,
+			};
+			document.getElementById("Display").innerHTML = Plane.Model;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+div {
+    width: 100%;
+    height: 50%;
+    background: green;
+    position: relative;
+    animation: mymove 6s infinite;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+}

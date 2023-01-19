@@ -1,0 +1,73 @@
+body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open contact form - bottom right screen */
+.open-button {
+    background-color: blue;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px
+}
+
+/* Popup Form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    border: 2px solid #0429f8;
+    z-index: 7;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 25px;
+    background-color: mediumblue;
+}
+
+/* Full width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 8px;
+    margin: 7px 0 15px 0;
+    border: 2px solid #0cf904ca;
+    background: #f2f2f2;
+}
+
+/* When the inputs gets focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Sets style for the input/login button */
+.form-container .btn {
+    background-color: rgb(61, 255, 47);
+    color: whitesmoke;
+    padding: 10px 15px;
+    border: 3px solid #f7f7f785;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+/* Add background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+    border-radius: 3px;
+}
+
+/* Adds hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}

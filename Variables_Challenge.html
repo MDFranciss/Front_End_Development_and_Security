@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h2>Nested Function</h2>
+		<p id="Nested_Counting"></p>
+		<script>
+			document.getElementById("Nested_Counting").innerHTML = Count()
+			function Count() {
+				var Starting_point = 25;
+				function Plus_three() {Starting_point += 3};
+				Plus_three();
+				return Starting_point;
+			}
+		</script>
+		<h2>Scope Local Variable</h2>
+		<script>
+			function Multiply_numbers_1() {
+			var X = 5;
+				document.write(7 * X / 2 + "<br>");
+			}
+				function Multiply_numbers_2() {
+				document.write(X * 8);
+			}
+				Multiply_numbers_1();
+				Multiply_numbers_2();
+		</script>
+		<h2>Scope Global Variable</h2>
+		<script>
+			var  Y = 5;
+				function Multiply_numbers_1() {
+				document.write(7 * Y / 2 + "<br>");
+			}
+				function Multiply_numbers_2() {
+				document.write(Y * 8);
+			}
+			Multiply_numbers_1();
+			Multiply_numbers_2();
+		</script>
+	</body>
+</html>

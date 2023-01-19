@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h2>IF, ELSE IF, and ELSE STATEMENT</h2>
+		<p id="How_much_do_you_weigh?"></p>
+		<script>
+		function Weight_Function() {
+			var Weight = 401;
+			var Reply;
+			if (Weight < 400 == Weight > 250) {
+				Reply = "You can participate in the upper weight class boxing match.";
+				}
+			else if (Weight < 250 == Weight > 150) {
+				Reply = "You can participate in the lower weight class boxing match.";
+				}
+			else {
+				Reply = "You do not fit the weight requirements to participate.";
+			}
+			document.getElementById("How_much_do_you_weigh?").innerHTML = Reply;
+		}
+		Weight_Function();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+	<h2>Keywords & Constructors</h2>
+	<p id="Keywords_and_Constructors"></p>
+		<script>
+			function Chipotle(Order, Rice, Beans, Sauce) {
+				this.Chipotle_Order = Order;
+				this.Chipotle_Rice = Rice;
+				this.Chipotle_Beans = Beans;
+				this.Chipotle_Sauce = Sauce;
+			}
+			var Brian = new Chipotle("Steak Burrito", "Brown Rice", "Black Beans", "Red Chili Sauce");
+			var Charles = new Chipotle("Chicken Bowl", "White Rice", "Pinto Beans", "Tomatillo-Green Chili Sauce");
+			var Cynthia = new Chipotle("Sofrito Burrito", "Jasmine Rice", "Kidney Beans", "Chipotle Sauce");
+			document.getElementById("Keywords_and_Constructors").innerHTML = 
+			"Brian ordered a " + Brian.Chipotle_Order + " with " + Brian.Chipotle_Rice + " and " +  Brian.Chipotle_Beans + " and a side of " + Brian.Chipotle_Sauce;
+		</script>
+	</body>
+</html>
